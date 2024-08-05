@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Input and textarea background and text color */
+.form-control, .form-control-file {
+    background-color: #2e2b2b; /* Change to your preferred background color */
+    color: #fff; /* Change to your preferred text color */
+    border: 1px solid #555; /* Optional: border color */
+}
+
+/* Input and textarea placeholder color */
+.form-control::placeholder {
+    color: #ccc; /* Change to your preferred placeholder color */
+}
+
+/* On focus */
+.form-control:focus, .form-control-file:focus {
+    border-color: #c8102e; /* Change to your preferred border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(200, 16, 46, 0.25); /* Optional: box shadow on focus */
+}
+
         label {
             color: white;
         }
