@@ -1,9 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashim Zuraiqi - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(46, 43, 43);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Set max width */
+        }
+        #info {
+            background: linear-gradient(144deg, rgba(0, 0, 0, 0.2), #4e4b4b); /* Semi-transparent background */
+            border-radius: 10px;
+            backdrop-filter: blur(40px); /* Apply blur effect */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+            color: white; /* White text color for contrast */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h6:hover {
+            color: red;
+        }
+        .card {
+            background: linear-gradient(145deg, rgba(0, 0, 0, 0.2), #4e4b4b);
+            box-shadow: 20px 20px 60px #5d5858;
+            border-radius: 15px;
+            padding: 30px; /* Increased padding */
+            margin-top: 20px;
+            height: auto;
+            text-align: center;
+        }
+        .card p, .card h1, .card h2 {
+            color: whitesmoke;
+            margin: 0;
+        }
+        .card p {
+            font-size: 1.2rem;
+        }
+        .card h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+        }
+        .card span {
+            color: red;
+        }
+        img {
+            background: linear-gradient(145deg, #c6c5c5, #4e4b4b);
+            box-shadow: 20px 20px 60px #5d5858;
+            margin-top: 25px;
+            border-radius: 10px;
+            border: 4px solid rgb(47, 45, 45);
+            max-width: 100%;
+        }
+        .icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .icons i {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: white; /* Default color for icons */
+            transition: color 0.3s;
+        }
+        .icons a:hover i {
+            color: red; /* Change color on hover */
+        }
+        footer {
+            padding: 20px;
+            background: linear-gradient(145deg, #4e4b4b, #c6c5c5);
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        footer a {
+            color: #ddd;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        table, td, tr {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +112,7 @@
                 <h6>About</h6>
             </div>
             <div class="col-md-3 col-6">
-                <a href="contact.html"><h6>Contact</h6></a>
+                <a style="color: white;" href="contact.html" target="_blank"><h6>Contact</h6></a>
             </div>
             <div class="col-md-3 col-6">
                 <h6>Portfolio</h6>
@@ -24,9 +120,9 @@
         </div>
         <div class="row">
             <div class="col-sm-6 col-12">
-                <div class="card" id="card">
-                    <p style="text-align: center;">Welcome to my world</p>
-                    <h1>Hi, I'm <span style="color: red;">Hashim Zuraiqi</span><br></h1>
+                <div class="card">
+                    <p>Welcome to my world</p>
+                    <h1>Hi, I'm <span>Hashim Zuraiqi</span><br></h1>
                     <h2>a Computer Science student</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate optio quasi libero! Dolorem, numquam possimus ullam maiores officiis aliquam dolores, dignissimos similique, in voluptatibus obcaecati quas laborum odio sunt veniam!</p>
                 </div>
@@ -48,18 +144,15 @@
                     <tr>
                         <td>Problem Solving</td>
                     </tr>
-                    
                 </table>
             </div>
         </div>
-        
-        <br>
         <div class="row">
             <div class="col-12 icons">
                 <p>Find me on</p>
-                    <a href="https://github.com/HashimZuraiqi"><i id="github" class="bi bi-github"></i></a>
-                    <a href="https://www.instagram.com/hashimalzuraiqi/"><i id="instagram" class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/hashim-zuraiqi-287828267/"><i id="linkedin" class="bi-linkedin"></i></a>
+                <a href="https://github.com/HashimZuraiqi"><i id="github" class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/hashimalzuraiqi/"><i id="instagram" class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hashim-zuraiqi-287828267/"><i id="linkedin" class="bi bi-linkedin"></i></a>
             </div>
         </div>
         <footer class="text-center">
