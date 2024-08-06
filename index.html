@@ -75,7 +75,7 @@
 
         img {
             background: linear-gradient(145deg, #c6c5c5, #4e4b4b);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(2, 2, 2, 0.2);
             margin-top: 25px;
             border-radius: 10px;
             border: 4px solid rgb(47, 45, 45);
@@ -121,8 +121,12 @@
             color: white;
         }
 
-        .skills-table {
+         #table{
             margin: auto;
+            background-color: #1c1c1c;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(145deg, #4e4b4b ,#151414);
         }
     </style>
 </head>
@@ -139,16 +143,16 @@
                 <a style="color: white;" href="contact.html" target="_blank"><h6>Contact</h6></a>
             </div>
             <div class="col-md-3 col-6">
-                <h6>Portfolio</h6>
+                <h6>Projects</h6>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 col-12">
                 <div class="card">
-                    <p>Welcome to my world</p>
+                    <p style="background-color: gray; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); background: linear-gradient(145deg, #4e4b4b ,#151414);">Welcome To My World</p>
                     <h1>Hi, I'm <span>Hashim Zuraiqi</span><br></h1>
-                    <h2>a Computer Science student</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate optio quasi libero! Dolorem, numquam possimus ullam maiores officiis aliquam dolores, dignissimos similique, in voluptatibus obcaecati quas laborum odio sunt veniam!</p>
+                    <h2 style="color: gray;">a Computer Science student</h2>
+                    <p> at Princess Sumaya University for Technology. I'm actively working on myself to secure roles as a software engineer. I've started with front-end development, and the website you're viewing right now is a showcase of my skills and projects. My journey in tech is driven by a passion for creating and improving digital experiences, and I'm excited to continue growing in this field.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-12">
@@ -158,16 +162,19 @@
         <div class="row text-center" id="skill">
             <div class="col-md-12">
                 <br>
-                <h2 style="color: red;">Skills</h2>
-                <table class="table skills-table">
+                <h2 style="color: red; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Skills</h2>
+                <table class="table table-striped table-dark" id="table">
                     <tr>
-                        <td>HTML & CSS</td>
+                        <td><i id="html" class="bi bi-filetype-html"> HTML</i></td>
                     </tr>
                     <tr>
-                        <td>JavaScript</td>
+                        <td><i id="css" class="bi bi-filetype-css"> CSS</i></td>
                     </tr>
                     <tr>
-                        <td>Problem Solving</td>
+                        <td><i id="js" class="bi bi-filetype-js"> JavaScript</i></td>
+                    </tr>
+                    <tr>
+                        <td><i id="pro" class="bi bi-award"> Problem Solving</i></td>
                     </tr>
                 </table>
             </div>
