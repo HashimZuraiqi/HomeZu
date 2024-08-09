@@ -1,0 +1,177 @@
+/* General Body Styling */
+body {
+    background-color: rgb(46, 43, 43);
+    background: linear-gradient(145deg, #4e4b4b); /* Combined gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Set max width */
+    padding: 0 15px;
+}
+
+/* Info Section */
+#info {
+    background: linear-gradient(144deg, rgba(0, 0, 0, 0.2), #4e4b4b); /* Semi-transparent background */
+    border-radius: 10px;
+    backdrop-filter: blur(40px); /* Apply blur effect */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Black shadow for floating effect */
+    color: white; /* White text color for contrast */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Headings and Hover Effects */
+h6:hover {
+    color: red;
+}
+
+/* Card Styling */
+.card {
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.2), #4e4b4b);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.8); /* Black shadow */
+    border-radius: 15px;
+    padding: 30px; /* Increased padding */
+    margin-top: 20px;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Adjusted to be consistent */
+    text-align: left; /* Changed to match the second file */
+}
+
+/* Smaller shadow for mobile screens */
+@media (max-width: 768px) {
+    
+    .container {
+        padding: 0 20px; /* Increase left and right padding for mobile */
+        max-width: 90%; /* Reduce max width to leave more space on the sides */
+    }
+    .card {
+        padding: 15px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8); /* Smaller black shadow
+         */
+    }
+
+    #info {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Smaller black shadow */
+    }
+}
+
+.card p, .card h1, .card h2 {
+    color: whitesmoke;
+    margin: 0;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+}
+
+.card span {
+    color: red;
+}
+
+/* Image Styling */
+img {
+    background: linear-gradient(145deg, #c6c5c5, #4e4b4b);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.8); /* Black shadow */
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 4px solid rgb(47, 45, 45);
+    max-width: 100%;
+}
+
+/* Icon Styling */
+.icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons i {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: white; /* Default color for icons */
+    transition: color 0.3s;
+}
+
+.icons a:hover i {
+    color: red; /* Change color on hover */
+}
+
+/* Button Styling */
+.btn-danger {
+    background-color: #c8102e; /* Match with your theme */
+    border-color: #c8102e;
+}
+
+.btn-danger:hover {
+    background-color: #a00e1b; /* Darker shade on hover */
+    border-color: #a00e1b;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background: linear-gradient(145deg, #4e4b4b, #c6c5c5);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center; /* Added to match the second file */
+    background: none; /* Removed gradient background, as it conflicts */
+}
+
+footer a {
+    color: #c8102e; /* Match with your theme */
+    text-decoration: none; /* Adjusted to match the second file */
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Table and Form Styling */
+table, td, tr {
+    color: white;
+}
+
+.form-control, .form-control-file {
+    background-color: #2e2b2b; /* Change to your preferred background color */
+    color: #fff; /* Change to your preferred text color */
+    border: 1px solid #555; /* Optional: border color */
+}
+
+/* Input and textarea placeholder color */
+.form-control::placeholder {
+    color: #ccc; /* Change to your preferred placeholder color */
+}
+
+/* On focus */
+.form-control:focus, .form-control-file:focus {
+    border-color: #c8102e; /* Change to your preferred border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(200, 16, 46, 0.25); /* Optional: box shadow on focus */
+}
+
+/* Label Styling */
+label {
+    color: white;
+}
